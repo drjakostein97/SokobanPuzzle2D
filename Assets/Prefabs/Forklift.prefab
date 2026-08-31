@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483b15b7f3df67945bfb170bc42c2485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SokobanMover
-  cellSize: 10
+  cellSize: 1
   moveDuration: 0.15
   checkBoxHalfExtent: 0.4
   wallMask:

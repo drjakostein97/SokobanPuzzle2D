@@ -149,6 +149,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
   tileMapper: {fileID: 633650314}
+  referenceTilemap: {fileID: 1315085073}
+  playerPrefab: {fileID: 6339705122461332875, guid: 4a3916c53c3ca6a458866233541ff94c, type: 3}
+  boxPrefab: {fileID: 8225707344762518432, guid: 610aa811f85e857478bdedd4c3b78140, type: 3}
+  boxSprites:
+  - {fileID: 21300000, guid: 0baa4b7be9bfbf9408c862c0f4756e08, type: 3}
+  - {fileID: 21300000, guid: 06c0be540181f8d409d9c0b548ca176a, type: 3}
+  - {fileID: 21300000, guid: 03f55e81f72113e4f8d690ef139f6081, type: 3}
+  - {fileID: 21300000, guid: b40e699190690e644a2d5cdf396b89fa, type: 3}
 --- !u!4 &84478888
 Transform:
   m_ObjectHideFlags: 0

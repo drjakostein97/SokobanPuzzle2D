@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e1c8c186204d9d54e8554f4b9f024c1d
+guid: b40e699190690e644a2d5cdf396b89fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6953422394296416450
-    second: Meshy_AI_pallet-supply-boxes_0
+      213: 1605057071784756862
+    second: Meshy_AI_pallet-wooden-crates.png_nobg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1024
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Meshy_AI_pallet-supply-boxes_0
+      name: Meshy_AI_pallet-wooden-crates.png_nobg_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        y: 125
+        width: 900
+        height: 899
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3747b65c2b708f90800000000000000
-      internalID: -6953422394296416450
+      spriteID: e7685ff17ee464610800000000000000
+      internalID: 1605057071784756862
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Meshy_AI_pallet-supply-boxes_0: -6953422394296416450
+      Meshy_AI_pallet-wooden-crates.png_nobg_0: 1605057071784756862
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
