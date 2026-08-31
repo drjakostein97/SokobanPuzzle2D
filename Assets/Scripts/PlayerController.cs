@@ -51,8 +51,20 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(MoveObject(boxObj.transform, levelManager.GridToWorld(boxTargetPos), moveDuration));
         }
 
+        // Rotate to face the movement direction
+        transform.rotation = Quaternion.Euler(0, 0, GetRotationZ(direction));
+
         state.playerPos = targetPos;
         StartCoroutine(MovePlayer(targetPos));
+    }
+
+    float GetRotationZ(Vector2Int direction)
+    {
+        if (direction == Vector2Int.up) return 0f;
+        if (direction == Vector2Int.down) return 180f;
+        if (direction == Vector2Int.left) return 90f;
+        if (direction == Vector2Int.right) return -90f;
+        return 0f;
     }
 
     IEnumerator MovePlayer(Vector2Int newGridPos)
@@ -60,6 +72,9 @@ public class PlayerController : MonoBehaviour
         isMoving = true;
         yield return StartCoroutine(MoveObject(transform, levelManager.GridToWorld(newGridPos), moveDuration));
         isMoving = false;
+
+        Debug.Log($"Boxes: {string.Join(", ", levelManager.state.boxPositions)}");
+        Debug.Log($"Targets: {string.Join(", ", levelManager.state.targetPositions)}");
 
         if (levelManager.state.CheckWin())
         {

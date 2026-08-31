@@ -17,7 +17,14 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        var levelText = new string[] { "#####", "#. $#", "#@  #", "#####" };
+        var levelText = new string[]
+ {
+    "######",
+    "#. $ #",
+    "#    #",
+    "#@   #",
+    "######"
+ };
         (grid, state) = LevelParser.ParseLevel(levelText);
 
         tileMapper.RenderGrid(grid);
@@ -29,6 +36,7 @@ public class LevelManager : MonoBehaviour
         Vector3 playerWorldPos = referenceTilemap.CellToWorld(new Vector3Int(state.playerPos.x, state.playerPos.y, 0));
         playerWorldPos += referenceTilemap.cellSize / 2f;
         playerInstance = Instantiate(playerPrefab, playerWorldPos, Quaternion.identity);
+        playerInstance.GetComponent<PlayerController>().levelManager = this;
 
         foreach (var boxPos in state.boxPositions)
         {
