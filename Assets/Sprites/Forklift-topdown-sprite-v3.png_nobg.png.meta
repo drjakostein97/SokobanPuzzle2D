@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f6dd95544edd0df45843e892a55a5872
+guid: a612711f4b1926943927078f7e54f58d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1327652192669410086
-    second: wheel_rear_right_0
+      213: -4298978278766057869
+    second: Meshy_AI_forklift-topdown-sprite-v3.png_nobg_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wheel_rear_right_0
+      name: Meshy_AI_forklift-topdown-sprite-v3.png_nobg_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 59
-        height: 155
+        x: 0
+        y: 33
+        width: 753
+        height: 991
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adcdbae6d5b339de0800000000000000
-      internalID: -1327652192669410086
+      spriteID: 376670d4806f654c0800000000000000
+      internalID: -4298978278766057869
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      wheel_rear_right_0: -1327652192669410086
+      Meshy_AI_forklift-topdown-sprite-v3.png_nobg_0: -4298978278766057869
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 84478888}
-  - component: {fileID: 84478887}
+  - component: {fileID: 84478889}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -136,27 +136,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &84478887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84478886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b197896e9cdaf414eb5c8f7e1ed120ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  tileMapper: {fileID: 633650314}
-  referenceTilemap: {fileID: 1315085073}
-  playerPrefab: {fileID: 6339705122461332875, guid: 4a3916c53c3ca6a458866233541ff94c, type: 3}
-  boxPrefab: {fileID: 8225707344762518432, guid: 610aa811f85e857478bdedd4c3b78140, type: 3}
-  boxSprites:
-  - {fileID: 21300000, guid: 0baa4b7be9bfbf9408c862c0f4756e08, type: 3}
-  - {fileID: 21300000, guid: 06c0be540181f8d409d9c0b548ca176a, type: 3}
-  - {fileID: 21300000, guid: 03f55e81f72113e4f8d690ef139f6081, type: 3}
-  - {fileID: 21300000, guid: b40e699190690e644a2d5cdf396b89fa, type: 3}
 --- !u!4 &84478888
 Transform:
   m_ObjectHideFlags: 0
@@ -172,6 +151,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &84478889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84478886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b197896e9cdaf414eb5c8f7e1ed120ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
+  tileMapper: {fileID: 633650314}
+  referenceTilemap: {fileID: 1315085073}
+  playerPrefab: {fileID: 6278400986936623018, guid: d54dc303157b0a14084a90f82aae0ff1, type: 3}
+  boxPrefab: {fileID: 8225707344762518432, guid: 610aa811f85e857478bdedd4c3b78140, type: 3}
+  boxSprites:
+  - {fileID: 21300000, guid: 0baa4b7be9bfbf9408c862c0f4756e08, type: 3}
+  - {fileID: 21300000, guid: 06c0be540181f8d409d9c0b548ca176a, type: 3}
+  - {fileID: 21300000, guid: 03f55e81f72113e4f8d690ef139f6081, type: 3}
+  - {fileID: 21300000, guid: b40e699190690e644a2d5cdf396b89fa, type: 3}
+  playerInstance: {fileID: 0}
+  boxInstances: []
 --- !u!1 &168813206
 GameObject:
   m_ObjectHideFlags: 0

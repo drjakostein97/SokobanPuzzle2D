@@ -10,11 +10,10 @@ public class LevelManager : MonoBehaviour
     public GameObject boxPrefab;
     public Sprite[] boxSprites;
 
-    private SokobanGrid grid;
-    private GameState state;
-
-    private GameObject playerInstance;
-    private List<GameObject> boxInstances = new();
+    [HideInInspector] public SokobanGrid grid;
+    [HideInInspector] public GameState state;
+    [HideInInspector] public GameObject playerInstance;
+    [HideInInspector] public List<GameObject> boxInstances = new();
 
     void Start()
     {
@@ -46,5 +45,11 @@ public class LevelManager : MonoBehaviour
 
             boxInstances.Add(boxObj);
         }
+    }
+
+    public Vector3 GridToWorld(Vector2Int gridPos)
+    {
+        Vector3 world = referenceTilemap.CellToWorld(new Vector3Int(gridPos.x, gridPos.y, 0));
+        return world + referenceTilemap.cellSize / 2f;
     }
 }
