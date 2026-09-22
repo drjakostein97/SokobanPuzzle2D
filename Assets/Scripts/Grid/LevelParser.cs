@@ -13,9 +13,10 @@ public static class LevelParser
             for (int x = 0; x < lines[y].Length; x++)
             {
                 char c = lines[y][x];
-                var pos = new Vector2Int(x, y);
+                int flippedY = grid.height - 1 - y;   // <-- flip here
+                var pos = new Vector2Int(x, flippedY);
 
-                grid.cells[x, y] = c switch
+                grid.cells[x, flippedY] = c switch
                 {
                     '#' => CellType.Wall,
                     '.' or '*' or '+' => CellType.Target,

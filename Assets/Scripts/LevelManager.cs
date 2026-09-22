@@ -14,15 +14,17 @@ public class LevelManager : MonoBehaviour
     [HideInInspector] public GameState state;
     [HideInInspector] public GameObject playerInstance;
     [HideInInspector] public List<GameObject> boxInstances = new();
+    public GameObject[] confettiPrefabs;
+    public float confettiScale = 1.5f;
 
     void Start()
     {
         var levelText = new string[]
  {
     "######",
-    "#. $ #",
     "#    #",
-    "#@   #",
+    "#.$@ #",
+    "#    #",
     "######"
  };
         (grid, state) = LevelParser.ParseLevel(levelText);
@@ -59,5 +61,15 @@ public class LevelManager : MonoBehaviour
     {
         Vector3 world = referenceTilemap.CellToWorld(new Vector3Int(gridPos.x, gridPos.y, 0));
         return world + referenceTilemap.cellSize / 2f;
+    }
+
+    public void PlayWinConfetti()
+    {
+        foreach (var boxObj in boxInstances)
+        {
+            GameObject chosenConfetti = confettiPrefabs[Random.Range(0, confettiPrefabs.Length)];
+            GameObject confetti = Instantiate(chosenConfetti, boxObj.transform.position, Quaternion.identity);
+            confetti.transform.localScale = Vector3.one * confettiScale;
+        }
     }
 }

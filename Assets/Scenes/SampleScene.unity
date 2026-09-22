@@ -174,6 +174,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b40e699190690e644a2d5cdf396b89fa, type: 3}
   playerInstance: {fileID: 0}
   boxInstances: []
+  confettiPrefabs:
+  - {fileID: 4938095755617958529, guid: 2e79f16be10fbd14f8d5ef191f8db4aa, type: 3}
+  - {fileID: 5700784828077083704, guid: ed962e35f7fa6f34f8d27aa6d19ea293, type: 3}
+  confettiScale: 0.5
 --- !u!1 &168813206
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,7 +804,7 @@ Transform:
   m_GameObject: {fileID: 1295105246}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 2, z: -10}
+  m_LocalPosition: {x: 3.05, y: 2.47, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

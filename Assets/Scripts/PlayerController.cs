@@ -79,6 +79,7 @@ public class PlayerController : MonoBehaviour
         if (levelManager.state.CheckWin())
         {
             Debug.Log("Level Complete!");
+            levelManager.PlayWinConfetti();
         }
     }
 

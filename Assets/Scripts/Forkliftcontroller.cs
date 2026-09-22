@@ -1,23 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-/// <summary>
-/// Top-down, car-style controller for the forklift. Put this on the root
-/// "Forklift" GameObject (the same Transform that WheelRoll's `vehicleRoot`
-/// points at). Requires a Rigidbody2D on the same object, Body Type = Dynamic,
-/// Gravity Scale = 0 (this is a top-down game, not side-on).
-///
-/// Uses the new Input System package directly (Keyboard.current) so it works
-/// out of the box with no Input Actions asset needed. Requires the
-/// "Input System" package to be installed and Player Settings > Active Input
-/// Handling set to "Input System Package" or "Both".
-///
-/// Wires straight into the wheel split/animation set from before:
-///  - feeds current speed to every WheelRoll each frame so tread scroll matches
-///    actual motion (including correctly reversing when backing up)
-///  - feeds steering input to the front WheelSteer components so the front
-///    wheels visually turn
-/// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 public class ForkliftController : MonoBehaviour
 {
